@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>울음소리</title>
+
+	<style>
+
+		audio {display: none;}
+		
+
+		#img {
+			width: 200px; 
+        	height: 150px; 
+        	
+        	float: left
+        	margin-top: 100px;
+		}
+
+	</style>
+</head>
+
+<body id="body">
+
+	<audio id='hz'controls><source src="type=audio/mp3"></audio>
+
+	<div id="img">
+		<a href="#" onmouseover="hzplay('cataudio/sound10.mp3')" onmouseleave="hzplay('')">
+		<img src="images/Asset 15.png" style="max-width: 100%; height: auto; margin-left: 40px; margin-top: 25px;">
+		</a>
+	</div>
+
+	<script type="text/javascript">
+
+    
+    function hzplay($mp3){
+        hz = document.getElementById("hz");
+        hz.src = $mp3;
+        hz.play();
+    }
+   
+	</script>
+
+</body>
+</html>
